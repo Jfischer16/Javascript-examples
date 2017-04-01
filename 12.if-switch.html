@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      if and switch
+    </title>
+  </head>
+  <body>
+    <p>
+      Speed on the motorway:
+      <input id="speed" type="number"/>
+      <button onclick="checkSpeed()">
+        Check
+      </button>
+    </p>
+    <p>
+      Your season now:
+      <input id="myInput"/>
+      <button onclick="checkSeason()">
+        Submit
+      </button>
+    </p>
+    <script>
+      function checkSpeed(){
+        var speed = document.getElementById("speed").value;
+        if (speed>70){
+          alert("You are going too fast!");
+          
+        }
+        else if(speed<40){
+          alert("You are going too slow!");
+          
+        }
+        else{
+          alert("Your speed is fine");
+          
+        }
+        
+      }
+      
+      function checkSeason(){
+        var x = document.getElementById("myInput").value.toLowerCase();
+        switch(x){
+          case "summer":
+            alert("It is summer time!");
+            break;
+          case "winter":
+            alert("It is winter time!");
+            break;
+          case "spring":
+            alert("It is spring time!");
+            break;
+          case "autumn":
+            alert("It is autumn time!");
+            break;
+          default:
+            alert("I do not recognise this");
+        }
+      }
+      
+    </script>
+  </body>
+</html>

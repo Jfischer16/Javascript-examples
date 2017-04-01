@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      objects
+    </title>
+  </head>
+  <body>
+    <p>
+      Javascript.
+    </p>
+    <script>
+      var myPhone = {
+        make : "Samsung" ,
+        model : "Samsung 6",
+        warranty : 12,
+        color : "white"
+      }
+          ;
+      console.log(myPhone);
+      delete myPhone.warranty;
+      console.log(myPhone);
+      console.log(myPhone.model);
+      var myOtherPhone = myPhone;
+      console.log(myOtherPhone);
+      myOtherPhone.model = "samsung s6 edge";
+      console.log(myOtherPhone);
+      console.log(myPhone);
+    </script>
+  </body>
+  
+</html>
